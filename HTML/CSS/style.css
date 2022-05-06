@@ -1,3 +1,273 @@
-.prueba {
-    color: tomato;
+html {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+body h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #364552;
+    color: white;
+    padding: 3rem 2rem;
+
+}
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+header img{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+nav ul li img {
+    height: 33px;
+}
+
+nav {
+    background-color: rgb(43, 43, 43);
+    height: 80px;
+    width: 100%;
+}
+
+.menu {
+    padding: 0;
+    float: right;
+    margin-right: 20px; 
+    list-style: none;
+}
+
+.opcion-item {
+    display: inline-block;
+    line-height: 2rem;
+    margin: 0 5px;
+    text-transform: uppercase;
+}
+
+.opcion-link {
+    color:#d4d4d4;
+    font-size: 18px;
+    padding: 14px 10px;
+    text-decoration: none;
+    background: rgb(43, 43, 43);
+    border-radius: 3px;
+}
+
+.opcion-link:hover {
+    background: #4da4ff;
+    color:#fff;
+}
+
+.nav-toggle {
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+figcaption{
+    text-align: center;
+}
+
+fieldset{
+    text-align: center;
+    font-style: oblique;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.art {
+    width: 99%;
+}
+
+.prod {
+    width: 280px;
+    height: 280px;
+    vertical-align: top;
+}
+
+figure{
+    float: right;
+}
+
+.carrito{
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carrito:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(72, 96, 201, 0.5);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.articulo {
+    width: 350px;
+}
+
+section article {
+    transition: box-shadow 0.3s ease;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+section article img {
+    width: 300px;
+    height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.precio{
+    align-items: center;
+    font-style: italic;
+    text-align: right;
+}
+
+.add {
+    transition: box-shadow 0.3s ease;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 44px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.add:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(72, 96, 201, 0.5);
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: white;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
+/* Responsividad */
+
+@media screen and (max-width: 1200px){
+    body{
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (max-width: 950px){
+    body{
+        background-color: lightslategrey;
+    }
+
+    .opcion-link {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background-color: lightslategrey;
+    }
+    .nav-toggle {
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 344px;
+        background-color: rgb(43, 43, 43);
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .opcion-item{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    .opcion-link{
+        font-size: 18px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: cornflowerblue;
+    }
+}
+
+@media screen and (max-width: 450px){
+    body{
+        background-color: tomato;
+    }
 }
